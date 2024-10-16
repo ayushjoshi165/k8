@@ -1,0 +1,16 @@
+There are various components in kubernetes : 
+Pods: The smallest deployable unit in Kubernetes, representing one or more containers (e.g., Docker containers) that run together on the same host and share resources.
+
+Nodes: Physical or virtual machines in a Kubernetes cluster that run pods. Each node contains the necessary services to run pods and is managed by the control plane.
+
+Deployments: A Kubernetes resource used to manage and update stateless applications. It ensures the desired number of pod replicas are running and handles rolling updates and rollbacks.
+
+StatefulSets: A resource designed to manage stateful applications. Unlike Deployments, it ensures the ordering, uniqueness, and persistence of pod replicas, useful for databases and applications that require stable, persistent identities.
+
+Clusters: A collection of nodes that Kubernetes manages. A cluster includes both worker nodes and a control plane, which handles scheduling, scaling, and overall management of the cluster.
+
+Services: An abstraction that defines a logical set of pods and provides a stable endpoint (IP address or DNS name) to access them. It balances traffic between the pods.
+
+Ingress: A Kubernetes object that manages external access to services within the cluster. It provides routing rules to access services via HTTP/HTTPS requests and can handle load balancing, SSL termination, and name-based virtual hosting.
+
+Namespaces: A way to logically divide a Kubernetes cluster into multiple virtual clusters, allowing for better resource management and isolation.
